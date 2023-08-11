@@ -1,0 +1,100 @@
+<div class="max-w-screen-xl  items-center  mx-auto p-4">
+    <div class="grid grid-cols-2 gap-4">
+        <!-- picture -->
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" [src]="products.images[0]" alt="Product Image" class="product-image h-4/6">
+            </div>
+        </div>
+
+        <!--? Normal table -->
+        <!-- <div  
+        class="relative overflow-x-auto sm:rounded-lg" >
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th 
+                        scope="col" 
+                        class="px-6 py-3"
+                        *ngFor="let column of headers">
+                            {{column}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr 
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <th 
+                        scope="row" 
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            {{products.title}}
+                        </th>
+                        <td class="px-6 py-4">
+                            {{products.description}}
+                        </td>
+                        <td class="px-6 py-4">
+                            ${{products.price}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   -->
+        
+        <!--? Table head left-side -->
+        <div  
+        class="relative overflow-x-auto sm:rounded-lg table-wrp block max-h-96" >
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table-auto">
+                <tr 
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <th 
+                    scope="col" 
+                    class="px-6 py-3 border-b"
+                    >
+                        {{headers[0]}}
+                    </th>
+                    <th 
+                    scope="col" 
+                    class="px-6 py-3 bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        {{products.title}}
+                    </th>
+                </tr>
+                <tr 
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <th 
+                    scope="col" 
+                    class="px-6 py-3 border-b"
+                    >
+                        {{headers[1]}}
+                    </th>
+                    <td 
+                    scope="col" 
+                    class="px-6 py-3 bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                    >
+                    {{products.description}}
+                    </td>
+                </tr>
+                <tr 
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <th 
+                    scope="col" 
+                    class="px-6 py-3 border-b"
+                    >
+                        {{headers[2]}}
+                    </th>
+                    <td 
+                    scope="col" 
+                    class="px-6 py-3 bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                    >
+                    ${{products.price}}
+                    </td>
+                </tr>
+            </table>
+        </div>  
+    </div>
+   
+
+   
+</div>
+
